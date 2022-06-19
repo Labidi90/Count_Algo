@@ -1,0 +1,20 @@
+ALGORITHM count
+VAR
+    word, vwl, leg:INTEGER:=0;
+    c:CHAR;
+    
+BEGIN
+    REPEAT
+        Read(c)
+        IF(c=' 'or c='.')THEN
+            word := word + 1
+        END_IF
+        IF (c='a' or c='e' or c='i' or c='o' or c='u' or c='y') THEN
+            vwl := vwl + 1
+        END_IF
+            leg := leg + 1;
+    UNTIL (C ='.')
+Write(word)
+Write(vwl)
+Write(leg)
+END
